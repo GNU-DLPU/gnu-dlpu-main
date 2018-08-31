@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			
+			*{
+				font-family: "微软雅黑"
+			}
+			.screen{
+				width: 100%;
+				height: 100vh;
+			}
+			
+			.maindiv{
+				display: flex;
+				flex-direction: column;
+				width: 100vw;
+				overflow-x: hidden;
+			}
+			
+			.screen1{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;				
+			}
+			.title,.subtitle{
+				width: 100%;
+				text-align: center;
+			}
+			
+			.title{
+				font-size: 5em;
+			}
+			
+			.subtitle{
+				font-size: 2em;
+			}
+			
+			.screen2{
+				display: flex;
+				flex-direction: column;
+				background-color: #efeff5;
+				justify-content: center;
+			}
+			
+			.screen2>div{
+				color: black;
+			}
+			
+			.title-lefttop{
+				margin: 50px;
+				font-size: 2em;
+			}
+			
+			.screen2-content{
+				margin: 50px;
+				line-height: 30px;
+				letter-spacing: 3px;
+			}
+			
+			.screen2-content:first-letter{
+				font-size: 2em;
+			}
+			
+			.screen3{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				background-color: dodgerblue;
+				
+			}
+			
+			.screen3 *{
+				color: white;
+			}
+			
+			.screen3>.title-lefttop{
+				margin-top: 0;
+				font-size: 3em;
+			}
+			
+			.screen3-content{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				width: 100%;
+			}
+			
+			.screen3-content>li{
+				width: 80%;
+				margin: 10px 0;
+				padding: 10px 0px;
+				list-style: none;
+				text-align: center;
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: center;
+				color: white;
+				text-align: center;
+				font-size: 20px;
+			}
+			
+			.screen4{
+				
+			}
+			
+			.a{
+				font-size: 1.5em;
+			} 
+			
+			.b{
+				font-size: 0.7em;
+			}
+			
+			.havedone{
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				margin: 0 0 0 50px;
+			}
+			
+			.havedone-item{
+				width: 100%;
+				height: 100px;
+				display: flex;
+				flex-direction: row;
+				/*background-color: gray;
+				border: solid white 1px;*/
+				margin: 10px 0;
+			}
+			
+			.github-icon{
+				width: 60px;
+				height: 60px;
+				margin: 20px 0;
+			}
+			
+			.havedone-item-right{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin-left: 50px;
+			}
+			
+			.havedone-item-title{
+				font-size: 1.4em;
+			}
+			
+			.havedone-item-subtitle{
+				font-size: 1em;
+			}
+			
+			.screen5{
+				display: flex;
+				flex-direction: row;
+				position: relative;	
+			}
+			
+			.member{
+				width: calc(100vw / 3);
+				height: 100vh;
+			}
+			
+			.screen5-mask{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				background-color: rgba(0,0,0,0.5);
+				float: left;
+				z-index: 111;
+				line-height: 100vh;
+				font-size: 5em;
+				color: white;
+				text-align: center;
+			}
+			
+			.screen6{
+				position: relative;
+			}
+			
+			.footer{
+				position: absolute;
+				left: 0;
+				bottom: 20px;
+				width: 100%;
+				text-align: center;
+			}
+			
+			.connectWay{
+				margin: 100px;
+				font-size: 1.5em;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="maindiv">
+			<div class="screen screen1">
+				<div class="title">GNU - DLPU</div>
+				<div class="subtitle">大连工业大学 开源软件计划</div>
+			</div>
+			<div class="screen screen2">
+				<div class="screen2-title title-lefttop">WHAT'S GNU</div>
+				<div class="screen2-content">
+					欢迎加入GNU—DLPU：大连工业大学开源软件计划组织
+有感于国内计算机专业名校都有自己的Github Repo，如浙大，中国科大，电子科大等，于是突发奇想成立GNU—DLPU。
+这是由一群已毕业的小哥哥（姐姐）成立的一个非盈利的纯学术性技术型的开源组织
+目的在于分享和交流，既是分享大家平时的积累，也是为了帮助部分童鞋更好的学习和资源搜有，同时也希望能给工业大学增加一些属于自己的独创开源项目
+
+感受开源软件的魅力，学习GNU文化~po出你的github账号，加入GNU-DLPU贡献自己的代码吧~
+				</div>
+			</div>
+			<div class="screen screen3">
+				<div class="title-lefttop">我们要做什么</div>
+				<ul class="screen3-content">
+					<li>为在校同学开发便捷且使用的在线工具。</li>
+					<li>所有开发内容完全开源，供编程爱好者学习与研究。</li>
+					<li>招募编程爱好者参与到我们的开发之中，不断壮大队伍，产生正循环。</li>
+				</ul>
+			</div>
+			<div class="screen screen4">
+				<div class="title-lefttop">
+					<span class="a">已有成果</span>
+					<span class="b">HAVE DONE</span>
+				</div>
+				<div class="havedone">
+					<div class="havedone-item">
+						<img src="img/github.png" alt="" class="github-icon" />
+						<div class="havedone-item-right">
+							<div class="havedone-item-title">大连工业大学GNU的github仓库</div>
+							<div class="havedone-item-subtitle">https://github.com/GNU-DLPU</div>
+						</div>
+					</div>
+					<div class="havedone-item">
+						<img src="img/github.png" alt="" class="github-icon" />
+						<div class="havedone-item-right">
+							<div class="havedone-item-title">GNU工具箱小程序</div>
+							<div class="havedone-item-subtitle">https://github.com/GNU-DLPU</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="screen screen5">
+				<div class="member" style="background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535715518787&di=fea5300e013de7bbe2ad7766a86bfd17&imgtype=0&src=http%3A%2F%2Fi3.17173cdn.com%2F2fhnvk%2FYWxqaGBf%2Fcms3%2FRrQITIblausCekc.png');"></div>
+				<div class="member" style="background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535715518363&di=231a3830ad880a6b514d0587acf593d4&imgtype=0&src=http%3A%2F%2Fs2.51cto.com%2Fwyfs02%2FM01%2F27%2F73%2FwKioL1NzDoWQfP6LAABqAQp20Jc795.jpg');"></div>
+				<div class="member" style="background-image: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535715518000&di=f33ffacab1d06a1acd353a25ceb043c3&imgtype=0&src=http%3A%2F%2Fchina.inmobi.com%2Fui%2Fimg%2Ftiles%2Fglobal-github.png');"></div>
+				<div class="screen5-mask">
+					<div class="mask-content">
+						我们是谁
+					</div>
+				</div>
+			</div>
+			<div class="screen screen6">
+				<div class="title-lefttop">
+					<span class="a">联系我们</span>
+					<span class="b">CONNECT US</span>
+				</div>
+				<div class="connectWay">
+					你就随便联系联系吧
+				</div>
+				<div class="footer">
+					沙河口ICP证030173号-1   杀网文【2000】0934-983号     ©DLPU-GNU
+				</div>
+			</div>	
+		</div>
+	</body>
+</html>
