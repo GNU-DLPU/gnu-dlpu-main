@@ -1,8 +1,13 @@
---- 
-after_success: 
-  - "ssh deimo@39.104.92.227 'cd /home/deimo/front/gnu-dlpu-serverside && git pull'"
-before_install: 
-  - "openssl aes-256-cbc -K $encrypted_46ebf854063c_key -iv $encrypted_46ebf854063c_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d"
-  - "chmod 600 ~/.ssh/id_rsa"
-  - "echo -e \"Host 39.104.92.227\\n\\tStrictHostKeyChecking no\\n\" >> ~/.ssh/config"
+language: ruby 
+addons:
+  ssh_known_hosts: 39.104.92.227
+before_install:
+  - openssl aes-256-cbc -K $encrypted_46ebf854063c_key -iv $encrypted_46ebf854063c_iv -in id_rsa.enc -out ~/.ssh/id_rsa -d
+  - eval "$(ssh-agent -s)"
+  - chmod 600 ~/.ssh/id_rsa
+  - ssh-add ~/.ssh/id_rsa
+script:
+- ls
+after_success:
+- ssh deimo@39.104.92.227 'cd /home/deimo/front/gnu-dlpu-serverside && git pull'
 
